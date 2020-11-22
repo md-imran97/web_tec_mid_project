@@ -1,4 +1,11 @@
-
+<?php
+	session_start();
+	if($_SESSION["username"]=="" && $_SESSION["id"]=="")
+	{
+		header("Location: login.php");
+	}
+	
+?>
 <?php  
 	
 	$searchField="";
@@ -14,6 +21,8 @@
 	
 	if(isset($_POST["logout"]))
 	{
+		 session_unset();
+		 session_destroy(); 
 		 header("Location: login.php");
 	}
 	
@@ -26,8 +35,8 @@
 			<h1>XYZ Hospital</h1>
 		</div>
 		<div>
-			<h3>Howdy, imran </h3>
-			<h4>ID : 101 </h4>
+			<h3>Howdy, <?php echo $_SESSION["username"] ?> </h3>
+			<h4>ID : <?php echo $_SESSION["id"] ?> </h4>
 			
 		</div>
 		<div>

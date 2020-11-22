@@ -1,7 +1,17 @@
+<?php
+	session_start();
+	if($_SESSION["username"]=="" && $_SESSION["id"]=="")
+	{
+		header("Location: login.php");
+	}
+	
+?>
 <?php 
 	if(isset($_POST["logout"]))
 	{
-		 header("Location: login.php");
+		session_unset();
+		session_destroy();
+		header("Location: login.php");
 	}
 ?>
 <html>

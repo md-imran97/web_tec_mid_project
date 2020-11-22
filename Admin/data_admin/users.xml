@@ -108,4 +108,23 @@
     <ID>106</ID>
     <status>0</status>
   </user>
+  <user>
+    <firstName>md</firstName>
+    <lastName>IMRAN</lastName>
+    <email>im@g.com</email>
+    <phone>12345</phone>
+    <addressStreet>11</addressStreet>
+    <addressState>33</addressState>
+    <addressCity>22</addressCity>
+    <addressZip>44</addressZip>
+    <birthMonth>november</birthMonth>
+    <birthDate>13</birthDate>
+    <birthYear>1991</birthYear>
+    <gender>male</gender>
+    <userType>pharmacy salesman</userType>
+    <password>12345678Aa#</password>
+    <ID>107</ID>
+    <status>0</status>
+    <salary>0</salary>
+  </user>
 </users>

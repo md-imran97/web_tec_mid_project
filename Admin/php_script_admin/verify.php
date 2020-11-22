@@ -1,3 +1,7 @@
+<?php session_start();
+	$_SESSION["username"] = "";
+	$_SESSION["id"] = "";
+?>
 <?php
 	
 	$id="";
@@ -32,11 +36,13 @@
 			for( ;$i<count($data);$i++)
 			{
 				
-				if($data[$i]->ID == $id && $data[$i]->password == $password)
+				if((string)$data[$i]->ID == $id && (string)$data[$i]->password == $password)
 				{
-					
-					
+					$name =(string)$data[$i]->lastName ;
+					$_SESSION["username"] = $name;
+					$_SESSION["id"] = $id;
 					header("Location: home.php");
+					//echo $_SESSION["username"];
 					
 					
 					break;

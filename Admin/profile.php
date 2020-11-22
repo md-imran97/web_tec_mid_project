@@ -1,7 +1,17 @@
+<?php
+	session_start();
+	if($_SESSION["username"]=="" && $_SESSION["id"]=="")
+	{
+		header("Location: login.php");
+	}
+	
+?>
 <?php include_once "php_script_admin/validate_profile_update.php"; ?>
 <?php 
 	if(isset($_POST["logout"]))
 	{
+		 session_unset();
+		 session_destroy();
 		 header("Location: login.php");
 	}
 ?>
