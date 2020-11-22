@@ -127,4 +127,42 @@
     <status>0</status>
     <salary>0</salary>
   </user>
+  <user>
+    <firstName>md</firstName>
+    <lastName>isteak</lastName>
+    <email>is@g.com</email>
+    <phone>0101</phone>
+    <addressStreet>11</addressStreet>
+    <addressState>11</addressState>
+    <addressCity>11</addressCity>
+    <addressZip>123</addressZip>
+    <birthMonth>july</birthMonth>
+    <birthDate>12</birthDate>
+    <birthYear>1991</birthYear>
+    <gender>male</gender>
+    <userType>doctor</userType>
+    <password>12345678Aa#</password>
+    <ID>108</ID>
+    <status>0</status>
+    <salary>0</salary>
+  </user>
+  <user>
+    <firstName>ak</firstName>
+    <lastName>jannat</lastName>
+    <email>ak@gmail.com</email>
+    <phone>09817</phone>
+    <addressStreet>3333333332</addressStreet>
+    <addressState>23323</addressState>
+    <addressCity>232323</addressCity>
+    <addressZip>10655</addressZip>
+    <birthMonth>november</birthMonth>
+    <birthDate>14</birthDate>
+    <birthYear>1994</birthYear>
+    <gender>female</gender>
+    <userType>employee</userType>
+    <password>11111111Aa#</password>
+    <ID>109</ID>
+    <status>0</status>
+    <salary>0</salary>
+  </user>
 </users>

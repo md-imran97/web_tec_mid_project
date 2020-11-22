@@ -38,14 +38,40 @@
 				
 				if((string)$data[$i]->ID == $id && (string)$data[$i]->password == $password)
 				{
-					$name =(string)$data[$i]->lastName ;
-					$_SESSION["username"] = $name;
-					$_SESSION["id"] = $id;
-					header("Location: home.php");
-					//echo $_SESSION["username"];
+					if((string)$data[$i]->userType == "admin")
+					{
+						$name =(string)$data[$i]->lastName ;
+						$_SESSION["username"] = $name;
+						$_SESSION["id"] = $id;
+						header("Location: home.php");
+						break;
+					}
+					else if((string)$data[$i]->userType == "pharmacy salesman")
+					{
+						$name =(string)$data[$i]->lastName ;
+						$_SESSION["username"] = $name;
+						$_SESSION["id"] = $id;
+						header("Location: ../Hospital/Pharmacy/pharmacyProfile.php");
+						break;
+					}
+					else if((string)$data[$i]->userType == "doctor")
+					{
+						$name =(string)$data[$i]->lastName ;
+						$_SESSION["username"] = $name;
+						$_SESSION["id"] = $id;
+						header("Location: ../Hospital/Doctor/doctorProfile.php");
+						break;
+					}
+					else if((string)$data[$i]->userType == "employee")
+					{
+						$name =(string)$data[$i]->lastName ;
+						$_SESSION["username"] = $name;
+						$_SESSION["id"] = $id;
+						header("Location: ../Midproject_employeephp/Search.php");
+						break;
+					}
 					
 					
-					break;
 				}
 					
 			}
